@@ -32,7 +32,7 @@ class AuthController{
      loginForm(){
         this.getNav();
         headerLoginText(this.body);
-       getLoginForm(this.body,async (email, password)=>{
+       getLoginForm(this.body, async (email, password)=>{
            let response = await this.service.post('login', {email, password});
             if(response['success']==true){
                 User.isLoggedIn = true;
