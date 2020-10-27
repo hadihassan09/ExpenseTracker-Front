@@ -141,7 +141,7 @@ function getLoginForm(parent, callbackFunction, callableFunction){
 
                 let registerDiv = document.createElement('div');
                 registerDiv.setAttribute('class', 'wrapper registerDiv ');
-                registerDiv.textContent='Dont have an account, ';
+                registerDiv.textContent='Dont have an account yet, ';
 
                 let resiterLink = document.createElement('a');
                 resiterLink.setAttribute('style', 'cursor: pointer');
