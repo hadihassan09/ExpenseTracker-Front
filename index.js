@@ -12,8 +12,8 @@ let User = {
     email: '',
 };
 
-if(sessionStorage.getItem('session')==null) {
-    sessionStorage.setItem('session', JSON.stringify(User));
+if(localStorage.getItem('session')==null) {
+    localStorage.setItem('session', JSON.stringify(User));
 }
 clear = ()=>{
     headDiv.innerHTML='';
@@ -21,7 +21,7 @@ clear = ()=>{
     footDiv.innerHTML='';
 }
 Refresh = ()=> {
-    User = JSON.parse(sessionStorage.getItem('session'));
+    User = JSON.parse(localStorage.getItem('session'));
     clear();
 
     if (User.isLoggedIn == false) { //Redirect To LoginForm

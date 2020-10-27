@@ -38,7 +38,7 @@ class AuthController{
                 User.isLoggedIn = true;
                 User.email = response['email'];
                 User.token = response['token'];
-                sessionStorage.setItem('session', JSON.stringify(User));
+                localStorage.setItem('session', JSON.stringify(User));
                 Refresh();
             }else{
                 return response['message'];

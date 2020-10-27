@@ -143,7 +143,7 @@ class ExpenseController{
                     token: '',
                     email: '',
                 };
-                sessionStorage.setItem('session' , JSON.stringify(UseData));
+                localStorage.setItem('session' , JSON.stringify(UseData));
                 Refresh();
             }
             if(type=='welcome'){

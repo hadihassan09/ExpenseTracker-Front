@@ -40,7 +40,7 @@ class Middleware{
             token:'',
             email:'',
         };
-        sessionStorage.setItem('session', JSON.stringify(User));
+        localStorage.setItem('session', JSON.stringify(User));
         location.reload();
     }
 }
